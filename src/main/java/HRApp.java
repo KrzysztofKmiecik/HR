@@ -32,7 +32,9 @@ public class HRApp {
         department1.add(employee2);
         department1.add(employee3);
 
-    //    department1.removeById(3);
+    department1.removeById(1);
+    department1.removeById(2);
+    department1.removeById(3);
 
         System.out.println(department1);
 

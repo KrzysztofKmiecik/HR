@@ -165,6 +165,9 @@ public class Department {
     }
 
     public double getAvgSalary() {
-        return (getTotalSalary()/getNumberOfEmployees());
+        if (getNumberOfEmployees() > 0) {
+            return (getTotalSalary() / getNumberOfEmployees());
+        }
+        return 0;
     }
 }
